@@ -13,4 +13,4 @@ class LoginPageLocators():
     REGISTER_CONFIRM = (By.CSS_SELECTOR, "#id_registration-password2")
     REGISTER_SUBMIT = (By.NAME, "registration_submit")
     LOGIN_URL = "/accounts/login/"
-    LOGIN_LINK = "http://selenium1py.pythonanywhere.com/accounts/login/"
+

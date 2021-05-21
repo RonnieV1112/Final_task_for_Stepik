@@ -2,9 +2,6 @@ from .base_page import BasePage
 from .locators import LoginPageLocators
 
 class LoginPage(BasePage):
-    def open_login_page(self):
-        self.open(LoginPageLocators.LOGIN_LINK)
-
     def should_be_login_page(self):
         self.should_be_login_url()
         self.should_be_login_form()
