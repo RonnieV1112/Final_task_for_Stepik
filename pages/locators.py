@@ -14,3 +14,9 @@ class LoginPageLocators():
     REGISTER_SUBMIT = (By.NAME, "registration_submit")
     LOGIN_URL = "/accounts/login/"
 
+class ProductPageLocators():
+    BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    SUCCESS_ALERT = (By.CSS_SELECTOR, ".alert-success .alertinner>strong")
+    PRICE_ALERT = (By.CSS_SELECTOR, ".alert-info .alertinner>p>strong")
+    PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main>h1")
+    PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main>p")
