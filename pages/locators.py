@@ -3,9 +3,17 @@ from selenium.webdriver.common.by import By
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_BUTTON = (By.CSS_SELECTOR, ".basket-mini .btn-default")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+
+class BasketPageLocators():
+    BASKET_URL = "/basket/"
+    BASKET_ITEM = (By.CSS_SELECTOR, ".basket-items")
+    BASKET_EMPTY_MESSAGE = (By.CSS_SELECTOR, ".page_inner #content_inner>p")
+    MESSAGE_TEXT = "Your basket is empty. Continue shopping"
 
 class LoginPageLocators():
     LOGIN_EMAIL = (By.CSS_SELECTOR, "#id_login-username")

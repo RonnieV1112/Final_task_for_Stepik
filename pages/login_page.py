@@ -21,3 +21,15 @@ class LoginPage(BasePage):
         assert self.is_element_present(*LoginPageLocators.REGISTER_CONFIRM), 'Confirm password is not in register form'
         assert self.is_element_present(*LoginPageLocators.REGISTER_SUBMIT), 'Register button is not in register form'
 
+    def register_new_user(self, email, password):
+        email_input = self.browser.find_element(*LoginPageLocators.REGISTER_EMAIL)
+        email_input.send_keys(email)
+        password_input = self.browser.find_element(*LoginPageLocators.REGISTER_PASSWORD)
+        password_input.send_keys(password)
+        confirm_input = self.browser.find_element(*LoginPageLocators.REGISTER_CONFIRM)
+        confirm_input.send_keys(password)
+        button = self.browser.find_element(*LoginPageLocators.REGISTER_SUBMIT)
+        button.click()
+
+
+
